@@ -7,78 +7,45 @@ body{
   font-size: 16px;
 }
 
+li{
+    list-style: none;
+}
 .container {
   background-color: #ffffff;
   margin: 0 auto;
-  width: 420px;
+  width: 360px;
 }
 
-.arrow-left{
+.content {
+  width: 90%;
+}
+
+.arrow-left {
+  padding: 16px 0 0 16px;
+  float: left;
   font-size: 1.3em;
   color: white;
-  position: absolute;
-  left: 16px;
-  bottom: 20px;
-}
-
-
-h1.bus-stop{
-  font-size: 24px;
-  position: absolute;
-  left: 72px;
-  color: #ffffff;
-  bottom: 16px;
-}
-
-h2.bus-departures{
-    font-size: 24px;
-    position: absolute;
-    left: 72px;
-    color: #ffffff;
-    bottom: 24px;
-
-}
-
-h2.bus-hide{
-    font-size: 24px;
-    position: absolute;
-    left: 16px;
-    color: #ffffff;
-    bottom: 24px;
-
-}
-
-h2.bus-direction{
-    font-size: 16px;
-    left:16px;
-    position: absolute;
-    color: #ffffff;
-    bottom: 10px;
 }
 
 nav {
-  position: relative;
-  margin: 0 auto;
+  display: block;
   padding-bottom: 72px;
   width: 100%;
   background-color: #2E762E;
-  display: block;
 }
 
 .route-list {
-  position: relative;
   height: 72px;
   width: 100%;
-  padding-top: 16px;
-  padding-left: 16px;
   border-bottom: 1px solid #B0B0B0;
+  padding: 14px 16px;
 }
 
 .route-list.inactive{
-    background-color: #d3d3d3
+    background-color: #E8E8E8
 }
+
 .direction-list {
-  position: relative;
   height: 36px;
   width: 100%;
   padding-top: 16px;
@@ -86,35 +53,49 @@ nav {
   background-color: #4CAF50;
 }
 
-.content {
-  display: inline-block;
-  padding: 1% 6%;
-  width: 90%;
+h1.bus-stop{
+  font-size: 20px;
+  padding: 16px 16px 16px 72px;
+  color: #ffffff;
 }
 
-img{
+h2.bus-departures{
+    display: inline;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.bus-direction{
+    font-size: 16px;
+    padding-left:16px;
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+.resume{
+    padding-top: 29px;
+
+}
+
+.map img{
   width: 100%;
   margin-top: -70px;
 }
 
 .busIcon{
-  position: absolute;
-  top: 16px;
-  left: 16px;
+  padding: 16px;
+  display: inline-block;
   font-size: 2em;
   color: white;
-  border-radius: 20%;
 }
 
 .heading{
   margin-top: -5px;
-  position: relative;
   height: 72px;
   background-color: #2E762E;
 }
 
 .direction{
-  position: relative;
   height: 36px;
   background-color: #4CAF50;
   font-size: 16px;
@@ -127,38 +108,40 @@ img{
 }
 
 .time{
-  color: #3051BA;
+  color: #1976D2;
+  padding-bottom: 5px;
   font-size: 24px;
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  font-weight: bold;
 }
 
-h2.bus{
-  position: absolute;
-  top: 14px;
-  left: 16px;
-  color: #2E7D32;
+.bus{
+  position: relative;
+  color: #235C26;
   font-size: 24px;
-  font-weight: medium;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 
-.place{
-  position: absolute;
-  padding-top: 7px;
-  bottom: 14px;
-  left: 16px;
+.right{
+    float: right;
+    padding-left: 16px;
+    text-align: right;
+}
+
+
+.left{
+    float: left;
+    padding-right: 16px;
+}
+
+.status img{
+    float: right;
+    height: 24px;
 }
 
 .route-list.inactive{
-    background-color: #F2F2F2
+    background-color: #E3E3E3;
 
-}
-
-h3.time-2{
-    position: absolute;
-    bottom: 14px;
-    right: 16px;
 }
 
 .hide{
@@ -167,9 +150,51 @@ h3.time-2{
     font-size: 24px;
 }
 
+
+.status{
+    height: 24px;
+    background-color: #015101;
+    width: 100%;
+}
+
+
+
+.bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 24px;
+}
+
+footer{
+    height: 48px;
+}
+
+.back{
+    display: inline;
+    float: left;
+    padding-top: 16px;
+    padding-left: 72px;
+
+}
+
+.home{
+    padding-left: 84px;
+    padding-top: 17px;
+
+
+}
+
+.recent{
+    display: inline;
+    float: right;
+    padding-top: 16px;
+    padding-right: 72px;
+}
+
 #warning{
+    font-size: .7em;
     position: absolute;
-    top: 16px;
-    left: 72px;
+    top: 2px;
+    left: 52px;
     color: #FFA000;
 }

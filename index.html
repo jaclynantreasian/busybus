@@ -11,6 +11,11 @@
 <body>
     <section class="container">
         <nav>
+            <div class="status">
+                <div class="statimage">
+                <img src="images/statusbar.png">
+            </div>
+            </div>
             <div class="arrow-left">
                 <i class="fas fa-arrow-left"></i>
             </div>
@@ -18,85 +23,134 @@
                 <h1 class= "bus-stop">Washington @ State Street<h1>
             </div>
         </nav>
-        <div class="image">
+        <div class="map">
             <img src="images/busmap2.png">
         </div>
         <header class="heading">
-            <h2 class="bus-departures">Bus Departures</h1>
             <div class="busIcon">
                 <i class="fas fa-bus"></i>
             </div>
+            <h2 class="bus-departures">Bus Departures</h2>
         </header>
-        <div class="direction">
-            <h2 class="bus-direction"> Eastbound </h1>
-            </div>
-        </div>
-        <div class= "route-list">
-            <h2 class="bus"> 60 </h1>
-            <h3 class="place">Randolph/Harbor Dr</h3>
-            <i class="fas fa-exclamation-triangle" id="warning"></i>
-            <h1 class="time"> 3 min </h1>
-            <h3 class="time-2">23, 43</h3>
 
-        </div>
-        <div class= "route-list">
-            <h2 class="bus"> 124 </h1>
-            <h3 class="place">Navy Pier</h3>
-            <h2 class="time">6 min</h1>
-            <h3 class="time-2">16, 26</h3>
-        </div>
-        <div class= "direction-list">
-            <h2 class="bus-direction">Northbound </h1>
-        </div>
-        <div class= "route-list">
-            <h2 class="bus">151</h1>
-            <h3 class="place">Devon/Clark </h3>
-            <h2 class="time">6 min</h1>
-            <h3 class="time-2">21, 36</h3>
-        </div>
 
-        <div class= "direction-list">
-            <h2 class="bus-direction">Southbound </h1>
-        </div>
-        <div class= "route-list">
-            <h2 class="bus">J14</h1>
-            <h3 class="place">103rd/ Stony Island </h3>
-            <h2 class="time">5 min</h1>
-            <h3 class="time-2">20, 35</h3>
+        <ul>
+            <li class="direction">
+                <h3 class="bus-direction"> Eastbound </h3>
+            </li>
+            <li class= "route-list">
+                <div class="left">
+                    <h3 class="bus"> 60 </h3>
+                    <div class="place">Randolph/Harbor Dr</div>
+                </div>
+                <div class="right">
+                    <h4 class="time"> 3 min </h4>
+                    <div class="later">23, 43</div>
+                </div>
+                <div class="clear"></div>
+            </li>
 
-        </div>
-        <div class= "route-list">
-           <h2 class="bus"> 124 </h1>
-           <h3 class="place">Navy Pier</h3>
-           <h2 class="time">10 min</h1>
-           <h3 class="time-2">20,30</h3>
+            <li class= "route-list">
+                <div class="left">
+                    <h3 class="bus"> 124 </h3>
+                    <div class="place">Navy Pier</div>
+                </div>
+                <div class="right">
+                    <h4 class="time">6 min</h4>
+                    <div class="later">16, 26</div>
+                </div>
+                <div class="clear"></div>
+            </li>
 
-        </div>
-        <div class= "direction-list">
-            <h2 class="bus-direction"> Reroute </h1>
-        </div>
-        <div class= "route-list inactive">
-            <h2 class="bus">6x</h1>
-            <h3 class="place">Jackson Park Express</h3>
-        </div>
-        <div class= "direction-list">
-            <h2 class="bus-direction"> Out of Service </h1>
-        </div>
-        <div class="route-list inactive">
-            <h2 class="bus">4</h1>
-            <h3 class="place">Cottage Grove</h3>
-            <h3 class="time-2"> Resumes 12:10am </h3>
-        </div>
-        <div class= "route-list inactive">
-            <h2 class="bus">20</h1>
-            <h3 class="place"> Madison </h3>
-            <h3 class="time-2">Resumes 12:10am</h3>
-        </div>
-        <div class= "route-list inactive">
-            <h2 class="bus"> 157 </h1>
-            <h3 class="place">Streeterville/Taylor</h3>
-            <h3 class="time-2">Resumes 6:00am</h1>
-        </div>
-    </section>
+            <li class="direction">
+                <h3 class="bus-direction"> Northbound </h3>
+            </li>
+            <li class="route-list">
+                <div class="left">
+                    <h3 class="bus">151</h3>
+                    <div class="place">Devon/Clark </div>
+                </div>
+                <div class="right">
+                    <h4 class="time">6 min</h4>
+                    <div class="later">21, 36</div>
+                </div>
+                <div class="clear"></div>
+            </li>
+
+            <li class="direction">
+                <h3 class="bus-direction"> Southbound </h3>
+            </li>
+            <li class="route-list">
+                <div class="left">
+                    <h3 class="bus">J14</h3>
+                    <div class="place">103rd/ Stony Island </div>
+                </div>
+                <div class="right">
+                    <h4 class="time">5 min</h4>
+                    <div class="later">20, 35</div>
+                </div>
+                <div class="clear"></div>
+            </li>
+            <li class= "route-list">
+                <div class="left">
+                    <h3 class="bus"> 124 </h3>
+                    <div class="place">Navy Pier</div>
+                </div>
+                <div class="right">
+                   <h4 class="time">10 min</h4>
+                   <div class="later">20,30</div>
+               </div>
+               <div class="clear"></div>
+           </li>
+
+           <li class="direction">
+               <h3 class="bus-direction"> Reroute </h3>
+           </li>
+            <li class= "route-list inactive">
+                <h3 class="bus">6x <i class="fas fa-exclamation-triangle" id="warning"></i></h3>
+                <div class="place">Jackson Park Express</div>
+            </li>
+            <li class="direction">
+                <h3 class="bus-direction"> Out of Service </h3>
+            </li>
+            <li class="route-list inactive">
+                <div class="left">
+                    <h3 class="bus">4</h3>
+                    <div class="place">Cottage Grove</div>
+                </div>
+                <div class="right">
+                    <h4 class="later resume">Resumes 12:10am</h4>
+                </div>
+                <div class="clear"></div>
+            </li>
+            <li class= "route-list inactive">
+                <div class="left">
+                    <h3 class="bus">20</h3>
+                    <div class="place"> Madison </div>
+                </div>
+                <div class="right">
+                    <h4 class="later resume">Resumes 12:10am</h4>
+                </div>
+            </li>
+            <li class= "route-list inactive">
+                <div class="left">
+                    <h3 class="bus"> 157 </h3>
+                    <div class="place">Streeterville/Taylor</div>
+                </div>
+                <div class="right">
+                    <h4 class="later resume">Resumes 6:00am</h4>
+                </div>
+            </li>
+            <footer class="bottom-nav">
+                <img class="back" src="images/back.png">
+                <img class="home" src="images/home.png">
+                <img class="recent" src="images/recent.png">
+                <div class="clear"></div>
+            </footer>
+            </ul>
+        </section>
+
+
+
 </body>
 </html>
